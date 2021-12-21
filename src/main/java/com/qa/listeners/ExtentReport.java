@@ -1,5 +1,10 @@
 package com.qa.listeners;
 
-public class ExtentReport {
+import org.testng.IReporter;
+
+
+public class ExtentReport  implements IReporter {
+	
+	
 
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-21T15:59:36Z" name="Default suite" finished-at="2021-12-21T15:59:36Z" duration-ms="38">
+    <groups>
+    </groups>
+    <test started-at="2021-12-21T15:59:36Z" name="Default test" finished-at="2021-12-21T15:59:36Z" duration-ms="38">
+      <class name="com.qa.testlogic.TestCase1">
+        <test-method signature="startCase()[pri:0, instance:com.qa.testlogic.TestCase1@4e096385]" started-at="2021-12-21T21:29:36Z" name="startCase" finished-at="2021-12-21T21:29:36Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase -->
+      </class> <!-- com.qa.testlogic.TestCase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

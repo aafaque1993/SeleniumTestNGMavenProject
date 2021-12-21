@@ -28,10 +28,6 @@ public class BaseClass {
 
 	}
 
-	public static void main(String[] args) {
 
-		BaseClass bc = new BaseClass();
-
-	}
 
 }
