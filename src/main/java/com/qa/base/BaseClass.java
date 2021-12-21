@@ -18,7 +18,7 @@ public class BaseClass {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(Constants.PROP_FILE_PATH);
 			prop.load(ip);
-			System.out.println("Loggs printed");
+			System.out.println("Base Class Created");
 
 		}
 
