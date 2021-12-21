@@ -11,7 +11,7 @@ public class TestCase1 extends BaseClass {
 	
 
 	public TestCase1() {
-		log.info("Test Case 1 Started");
+		
 	}
 	
 	
@@ -19,7 +19,7 @@ public class TestCase1 extends BaseClass {
 	@Test
 	public void startCase() {
 		
-		log.info("Starting................");
+		
 	}
 	
 }

@@ -2,38 +2,36 @@ package com.qa.base;
 
 import java.io.FileInputStream;
 import java.util.Properties;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+import com.qa.commonutils.Constants;
 
 public class BaseClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public static Logger log = null;
-	
-	
-	
-	
+	public static String baseDirectory = System.getProperty("user.dir");
+	// public static Logger log;
+
 	public BaseClass() {
-		log= Logger.getLogger("rootLogger");
-		PropertyConfigurator.configure(".\\src\\main\\java\\logReporting\\log4j.properties");		
+
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + ".\\src\\main\\java\\com\\qa\\configfile\\config.properties");
+			FileInputStream ip = new FileInputStream(Constants.PROP_FILE_PATH);
 			prop.load(ip);
-			log.info("Properties file initialised");
-			
-		} 
-	
-			
+			System.out.println("Loggs printed");
+
+		}
+
 		catch (Exception e) {
 			e.printStackTrace();
-		} 
-		
+		}
+
 	}
-	
-	
+
+	public static void main(String[] args) {
+
+		BaseClass bc = new BaseClass();
+
+	}
 
 }
