@@ -120,7 +120,7 @@ public class ExcelUtils {
 
 			// check for cell is null or not
 			if (cell == null)
-				return "";
+				return "Null -->  No Value is present in sheet";
 			// check cell type for string numeric, boolean or blank
 			if (cell.getCellType().name().equals("STRING"))
 				return cell.getStringCellValue();
@@ -248,29 +248,20 @@ public class ExcelUtils {
 		// System.out.println("**************addColumn*********************");
 
 		try {
-			fis = new FileInputStream(path);
-			workbook = new XSSFWorkbook(fis);
 			int index = workbook.getSheetIndex(sheetName);
 			if (index == -1)
 				return false;
 
 			XSSFCellStyle style = workbook.createCellStyle();
-			// style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
-			// style.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
-
 			sheet = workbook.getSheetAt(index);
 
 			row = sheet.getRow(0);
 			if (row == null)
 				row = sheet.createRow(0);
-
-			// cell = row.getCell();
-			// if (cell == null)
-			// System.out.println(row.getLastCellNum());
 			if (row.getLastCellNum() == -1)
 				cell = row.createCell(0);
 			else
-				cell = row.createCell(row.getLastCellNum());
+				cell = row.createCell(row.getLastCellNum()+1);
 
 			cell.setCellValue(colName);
 			cell.setCellStyle(style);
@@ -293,13 +284,9 @@ public class ExcelUtils {
 		try {
 			if (!isSheetExist(sheetName))
 				return false;
-			fis = new FileInputStream(path);
-			workbook = new XSSFWorkbook(fis);
 			sheet = workbook.getSheet(sheetName);
 			XSSFCellStyle style = workbook.createCellStyle();
-			// style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
 			XSSFCreationHelper createHelper = workbook.getCreationHelper();
-			// style.setFillPattern(XSSFCellStyle.NO_FILL);
 			for (int i = 0; i < getRowCount(sheetName); i++) {
 				row = sheet.getRow(i);
 				if (row != null) {
