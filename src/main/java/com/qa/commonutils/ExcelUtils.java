@@ -98,11 +98,11 @@ public class ExcelUtils {
 			int index = workbook.getSheetIndex(sheetName);// check if sheet exists or not
 			if (index == -1)
 				return "";
+			sheet = workbook.getSheetAt(index);
 			if (rowNum <= 0)// Row number should not be less than or equal to 0
 				return "";
 			// get column number via column name
 			int col_Num = -1;
-			sheet = workbook.getSheetAt(index);
 			row = sheet.getRow(0);
 			for (int i = 0; i < row.getLastCellNum(); i++) {
 				// System.out.println(row.getCell(i).getStringCellValue().trim());
@@ -245,8 +245,6 @@ public class ExcelUtils {
 
 	// returns true if column is created successfully
 	public boolean addColumn(String sheetName, String colName) {
-		// System.out.println("**************addColumn*********************");
-
 		try {
 			int index = workbook.getSheetIndex(sheetName);
 			if (index == -1)
@@ -261,7 +259,7 @@ public class ExcelUtils {
 			if (row.getLastCellNum() == -1)
 				cell = row.createCell(0);
 			else
-				cell = row.createCell(row.getLastCellNum()+1);
+				cell = row.createCell(row.getLastCellNum() + 1);
 
 			cell.setCellValue(colName);
 			cell.setCellStyle(style);
@@ -286,7 +284,6 @@ public class ExcelUtils {
 				return false;
 			sheet = workbook.getSheet(sheetName);
 			XSSFCellStyle style = workbook.createCellStyle();
-			XSSFCreationHelper createHelper = workbook.getCreationHelper();
 			for (int i = 0; i < getRowCount(sheetName); i++) {
 				row = sheet.getRow(i);
 				if (row != null) {
