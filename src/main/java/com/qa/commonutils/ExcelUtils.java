@@ -93,17 +93,16 @@ public class ExcelUtils {
 			return true;
 	}
 
-	// Get cell data by column name and rownum
+	// Get cell data by column name and row number
 	public String getCellData(String sheetName, String colName, int rowNum) {
 		try {
-			if (rowNum <= 0)
-				return "";
-
-			int index = workbook.getSheetIndex(sheetName);
-			int col_Num = -1;
+			int index = workbook.getSheetIndex(sheetName);//check if sheet exists or not
 			if (index == -1)
 				return "";
-
+			if (rowNum <= 0)//Row number should not be less than or equal to 0 
+				return "";
+			//get column number via column name 
+			int col_Num = -1;
 			sheet = workbook.getSheetAt(index);
 			row = sheet.getRow(0);
 			for (int i = 0; i < row.getLastCellNum(); i++) {
@@ -113,51 +112,29 @@ public class ExcelUtils {
 			}
 			if (col_Num == -1)
 				return "";
-
+			//get data by row number and column number
 			sheet = workbook.getSheetAt(index);
 			row = sheet.getRow(rowNum);
 			if (row == null)
 				return "";
 			cell = row.getCell(col_Num);
 
+			// check for cell is null or not
 			if (cell == null)
 				return "";
-
-			// System.out.println(cell.getCellType().name());
-
+			// check cell type for string  numeric, boolean or blank
 			if (cell.getCellType().name().equals("STRING"))
 				return cell.getStringCellValue();
 
-			// if (cell.getCellType().STRING != null)
-
-			// if(cell.getCellType()==Xls_Reader.CELL_TYPE_STRING)
-			// return cell.getStringCellValue();
-			else if ((cell.getCellType().name().equals("NUMERIC")) || (cell.getCellType().name().equals("FORMULA"))) {
-
-				String cellText = String.valueOf(cell.getNumericCellValue());
-				if (HSSFDateUtil.isCellDateFormatted(cell)) {
-					// format in form of M/D/YY
-					double d = cell.getNumericCellValue();
-
-					Calendar cal = Calendar.getInstance();
-					cal.setTime(HSSFDateUtil.getJavaDate(d));
-					cellText = (String.valueOf(cal.get(Calendar.YEAR))).substring(2);
-					cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" + cal.get(Calendar.MONTH) + 1 + "/" + cellText;
-
-					// System.out.println(cellText);
-
-				}
-
-				return cellText;
-			} else if (cell.getCellType().BLANK != null)
-				return "";
+			 else if (cell.getCellType().BLANK != null)
+				return "Null -->  No Value is present in sheet";
 			else
 				return String.valueOf(cell.getBooleanCellValue());
 
 		} catch (Exception e) {
 
 			e.printStackTrace();
-			return "row " + rowNum + " or column " + colName + " does not exist in xls";
+			return "Row Number " + rowNum + " Column Number " + colName + " Does not exist in Sheet";
 		}
 	}
 
