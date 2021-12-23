@@ -1,7 +1,0 @@
-com\qa\base\BaseClass.class
-com\qa\commonutils\ExcelUtils.class
-com\qa\commonutils\Constants.class
-com\qa\listeners\ExtentReport.class
-com\qa\commonutils\CommonUtils.class
-com\qa\pageobjects\HomePage.class
-com\qa\pageobjects\LoginPage.class
