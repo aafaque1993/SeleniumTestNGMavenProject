@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-24T03:11:34 IST" name="Command line suite" finished-at="2021-12-24T03:11:37 IST" duration-ms="3282">
+    <groups>
+    </groups>
+    <test started-at="2021-12-24T03:11:34 IST" name="Command line test" finished-at="2021-12-24T03:11:37 IST" duration-ms="3282">
+      <class name="com.qa.testlogic.TestCase2">
+        <test-method signature="startCase1()[pri:0, instance:com.qa.testlogic.TestCase2@7d0332e1]" started-at="2021-12-24T03:11:35 IST" name="startCase1" finished-at="2021-12-24T03:11:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase1 -->
+        <test-method signature="startCase2()[pri:0, instance:com.qa.testlogic.TestCase2@7d0332e1]" started-at="2021-12-24T03:11:35 IST" name="startCase2" finished-at="2021-12-24T03:11:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase2 -->
+        <test-method signature="startCase3()[pri:0, instance:com.qa.testlogic.TestCase2@7d0332e1]" started-at="2021-12-24T03:11:35 IST" name="startCase3" finished-at="2021-12-24T03:11:36 IST" duration-ms="1226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase3 -->
+      </class> <!-- com.qa.testlogic.TestCase2 -->
+      <class name="com.qa.testlogic.TestCase1">
+        <test-method signature="startCase1()[pri:0, instance:com.qa.testlogic.TestCase1@3e681bc]" started-at="2021-12-24T03:11:34 IST" name="startCase1" finished-at="2021-12-24T03:11:34 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase1 -->
+        <test-method signature="startCase2()[pri:0, instance:com.qa.testlogic.TestCase1@3e681bc]" started-at="2021-12-24T03:11:34 IST" name="startCase2" finished-at="2021-12-24T03:11:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase2 -->
+        <test-method signature="startCase3()[pri:0, instance:com.qa.testlogic.TestCase1@3e681bc]" started-at="2021-12-24T03:11:34 IST" name="startCase3" finished-at="2021-12-24T03:11:35 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase3 -->
+      </class> <!-- com.qa.testlogic.TestCase1 -->
+      <class name="com.qa.testlogic.TestCase3">
+        <test-method signature="startCase1()[pri:0, instance:com.qa.testlogic.TestCase3@65f00478]" started-at="2021-12-24T03:11:36 IST" name="startCase1" finished-at="2021-12-24T03:11:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase1 -->
+        <test-method signature="startCase2()[pri:0, instance:com.qa.testlogic.TestCase3@65f00478]" started-at="2021-12-24T03:11:36 IST" name="startCase2" finished-at="2021-12-24T03:11:36 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase2 -->
+        <test-method signature="startCase3()[pri:0, instance:com.qa.testlogic.TestCase3@65f00478]" started-at="2021-12-24T03:11:36 IST" name="startCase3" finished-at="2021-12-24T03:11:37 IST" duration-ms="1200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCase3 -->
+      </class> <!-- com.qa.testlogic.TestCase3 -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
