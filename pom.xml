@@ -102,8 +102,18 @@
 							<configuration>
 								<suiteXmlFiles>
 									<suiteXmlFile>src\main\resources\testngJobs.xml</suiteXmlFile>
+									<properties>
+										<property>
+											<name>parallel</name>
+											<value>tests</value>
+										</property>
+										
+										<property>
+											<name>threadCount</name>
+											<value>4</value>
+										</property>
+									</properties>
 								</suiteXmlFiles>
-
 							</configuration>
 						</plugin>
 					</plugins>

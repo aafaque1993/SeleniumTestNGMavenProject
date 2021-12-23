@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="TestSuite" time="3.2" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="TestSuite" time="2.726" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
@@ -64,13 +64,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.qa.testlogic.TestCase1" name="startCase1" time="0.015"/>
-  <testcase classname="com.qa.testlogic.TestCase1" name="startCase2" time="0.001"/>
-  <testcase classname="com.qa.testlogic.TestCase1" name="startCase3" time="0.75"/>
-  <testcase classname="com.qa.testlogic.TestCase2" name="startCase1" time="0.001"/>
-  <testcase classname="com.qa.testlogic.TestCase2" name="startCase2" time="0.004"/>
-  <testcase classname="com.qa.testlogic.TestCase2" name="startCase3" time="1.224"/>
+  <testcase classname="com.qa.testlogic.TestCase1" name="startCase1" time="0.013"/>
+  <testcase classname="com.qa.testlogic.TestCase1" name="startCase2" time="0"/>
+  <testcase classname="com.qa.testlogic.TestCase1" name="startCase3" time="0.741"/>
+  <testcase classname="com.qa.testlogic.TestCase2" name="startCase1" time="0.004"/>
+  <testcase classname="com.qa.testlogic.TestCase2" name="startCase2" time="0.002"/>
+  <testcase classname="com.qa.testlogic.TestCase2" name="startCase3" time="1.252"/>
   <testcase classname="com.qa.testlogic.TestCase3" name="startCase1" time="0"/>
-  <testcase classname="com.qa.testlogic.TestCase3" name="startCase2" time="0.007"/>
-  <testcase classname="com.qa.testlogic.TestCase3" name="startCase3" time="1.198"/>
+  <testcase classname="com.qa.testlogic.TestCase3" name="startCase2" time="0.004"/>
+  <testcase classname="com.qa.testlogic.TestCase3" name="startCase3" time="0.71"/>
 </testsuite>
