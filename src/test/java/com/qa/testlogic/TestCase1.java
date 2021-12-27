@@ -1,8 +1,6 @@
 package com.qa.testlogic;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,7 +9,6 @@ import org.testng.annotations.Test;
 
 import com.qa.base.BaseClass;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCase1 extends BaseClass {
 
@@ -27,6 +24,7 @@ public class TestCase1 extends BaseClass {
 	@Parameters("txnref")
 	@Test
 	public void startCase1(String txnref) {
+		System.out.println("Case 1");
 		System.out.println("Transaction Reference " + txnref);
 	}
 
