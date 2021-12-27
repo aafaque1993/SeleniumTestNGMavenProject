@@ -101,19 +101,13 @@
 							<version>3.0.0-M5</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>src\main\resources\testngJobs.xml</suiteXmlFile>
-									<properties>
-										<property>
-											<name>parallel</name>
-											<value>tests</value>
-										</property>
-										
-										<property>
-											<name>threadCount</name>
-											<value>4</value>
-										</property>
-									</properties>
+									<suiteXmlFile>src\main\resources\${xmlSuites}</suiteXmlFile>
 								</suiteXmlFiles>
+								<systemPropertyVariables>
+									<browser>${browser}</browser>
+									<url>${url}</url>
+									<transactionref>${txnref}</transactionref>
+								</systemPropertyVariables>
 							</configuration>
 						</plugin>
 					</plugins>

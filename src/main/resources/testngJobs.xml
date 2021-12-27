@@ -10,14 +10,14 @@
 
 		<classes>
 			<class name="com.qa.testlogic.TestCase1"></class>
-			<class name="com.qa.testlogic.TestCase2"></class>
-			<class name="com.qa.testlogic.TestCase3"></class>
+			<!-- <class name="com.qa.testlogic.TestCase2"></class>
+			<class name="com.qa.testlogic.TestCase3"></class> -->
 		</classes>
 
 
 	</test>
 	
-	<test name="2st Set of testing In Jenkins" parallel="methods"
+	<!-- <test name="2st Set of testing In Jenkins" parallel="methods"
 		thread-count="5">
 		<classes>
 			<class name="com.qa.testlogic.TestCase1"></class>
@@ -26,6 +26,6 @@
 		</classes>
 
 
-	</test>
+	</test> -->
 
 </suite>

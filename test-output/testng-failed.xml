@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [SeleNium TestNG FrameWork]" parallel="tests">
+  <test name="1st Set of testing In Jenkins(failed)" parallel="methods">
+    <classes>
+      <class name="com.qa.testlogic.TestCase1">
+        <methods>
+          <include name="startCase2"/>
+          <include name="startCase3"/>
+          <include name="startCase1"/>
+        </methods>
+      </class> <!-- com.qa.testlogic.TestCase1 -->
+    </classes>
+  </test> <!-- 1st Set of testing In Jenkins(failed) -->
+</suite> <!-- Failed suite [SeleNium TestNG FrameWork] -->
