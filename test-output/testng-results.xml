@@ -1,165 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SeleNium TestNG FrameWork" duration-ms="77" started-at="2021-12-27T19:42:18Z" finished-at="2021-12-27T19:42:19Z">
+  <suite name="SeleNium TestNG FrameWork" duration-ms="19825" started-at="2021-12-27T22:02:47Z" finished-at="2021-12-27T22:03:07Z">
     <groups>
     </groups>
-    <test name="1st Set of testing In Jenkins" duration-ms="77" started-at="2021-12-27T19:42:18Z" finished-at="2021-12-27T19:42:19Z">
-      <class name="com.qa.testlogic.TestCase1">
-        <test-method status="FAIL" signature="startCase1(java.lang.String)[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="startCase1" duration-ms="0" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'txnref' is required by @Test on method startCase1 but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'txnref' is required by @Test on method startCase1 but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:568)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1293)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1020)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1110)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Build Wid Out Params" duration-ms="19825" started-at="2021-12-27T22:02:47Z" finished-at="2021-12-27T22:03:07Z">
+      <class name="com.qa.testlogic.BuildWidOutParam">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testlogic.BuildWidOutParam@2e3967ea]" name="setup" duration-ms="19693" started-at="2021-12-28T03:32:47Z" finished-at="2021-12-28T03:33:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startCase1 -->
-        <test-method status="FAIL" signature="startTestcase(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="startTestcase" is-config="true" duration-ms="0" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestcase -->
-        <test-method status="FAIL" signature="startTestcase(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="startTestcase" is-config="true" duration-ms="0" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestcase -->
-        <test-method status="SKIP" signature="startCase3()[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="startCase3" duration-ms="18" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startCase3 -->
-        <test-method status="SKIP" signature="startCase2()[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="startCase2" duration-ms="17" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method startTestcase but has not been marked @Optional or defined
-in C:\Aafaque\TestNGFramework\SeleniumTestNGMavenProject\src\main\resources\testngJobs.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startCase2 -->
-        <test-method status="SKIP" signature="endTestcase()[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="endTestcase" is-config="true" duration-ms="0" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTestcase -->
-        <test-method status="SKIP" signature="endTestcase()[pri:0, instance:com.qa.testlogic.TestCase1@7b36aa0c]" name="endTestcase" is-config="true" duration-ms="0" started-at="2021-12-28T01:12:19Z" finished-at="2021-12-28T01:12:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTestcase -->
-      </class> <!-- com.qa.testlogic.TestCase1 -->
-    </test> <!-- 1st Set of testing In Jenkins -->
+        </test-method> <!-- setup -->
+      </class> <!-- com.qa.testlogic.BuildWidOutParam -->
+    </test> <!-- Build Wid Out Params -->
   </suite> <!-- SeleNium TestNG FrameWork -->
 </testng-results>

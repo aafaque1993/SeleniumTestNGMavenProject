@@ -3,14 +3,13 @@
 <suite name="SeleNium TestNG FrameWork" parallel="tests"
 	thread-count="2">
 
-	<test name="1st Set of testing In Jenkins" parallel="methods"
+	<test name="Build Wid Out Params" parallel="methods"
 		thread-count="5">
 
 
 
 		<classes>
 			<class name="com.qa.testlogic.BuildWidOutParam"></class>
-			
 		</classes>
 
 
