@@ -4,9 +4,6 @@ import java.io.FileInputStream;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Parameters;
-
-import com.beust.jcommander.Parameter;
 import com.qa.commonutils.Constants;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
