@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="SeleNium TestNG FrameWork" duration-ms="19825" started-at="2021-12-27T22:02:47Z" finished-at="2021-12-27T22:03:07Z">
+  <suite name="Default suite" duration-ms="47" started-at="2022-01-03T09:24:44Z" finished-at="2022-01-03T09:24:44Z">
     <groups>
     </groups>
-    <test name="Build Wid Out Params" duration-ms="19825" started-at="2021-12-27T22:02:47Z" finished-at="2021-12-27T22:03:07Z">
-      <class name="com.qa.testlogic.BuildWidOutParam">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.testlogic.BuildWidOutParam@2e3967ea]" name="setup" duration-ms="19693" started-at="2021-12-28T03:32:47Z" finished-at="2021-12-28T03:33:07Z">
+    <test name="Default test" duration-ms="47" started-at="2022-01-03T09:24:44Z" finished-at="2022-01-03T09:24:44Z">
+      <class name="com.qa.testlogic.Priority">
+        <test-method status="PASS" signature="test2()[pri:2, instance:com.qa.testlogic.Priority@3224f60b]" name="test2" duration-ms="14" started-at="2022-01-03T14:54:44Z" finished-at="2022-01-03T14:54:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- com.qa.testlogic.BuildWidOutParam -->
-    </test> <!-- Build Wid Out Params -->
-  </suite> <!-- SeleNium TestNG FrameWork -->
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test1()[pri:1, instance:com.qa.testlogic.Priority@3224f60b]" name="test1" duration-ms="1" started-at="2022-01-03T14:54:44Z" depends-on-methods="com.qa.testlogic.Priority.test2" finished-at="2022-01-03T14:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.qa.testlogic.Priority -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

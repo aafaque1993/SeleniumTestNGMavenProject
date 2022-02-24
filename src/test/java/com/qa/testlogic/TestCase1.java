@@ -14,14 +14,17 @@ public class TestCase1 extends BaseClass {
 
 	@FindBy(xpath = "//sample")
 	private WebElement element;
+	
+	String txnref="";
 
-	@Parameters({ "browser", "url" })
+	@Parameters({ "browser", "url","txnref" })
 	@BeforeMethod
-	public void startTestcase(String browser, String url) {
+	public void startTestcase(String browser, String url,String txnref) {
 		BrowserInit(browser, url);
+		this.txnref=txnref;
 	}
 
-	@Parameters("txnref")
+	@Parameters()
 	@Test
 	public void startCase1(String txnref) {
 		System.out.println("Case 1");
